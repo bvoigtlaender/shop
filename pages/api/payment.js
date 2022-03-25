@@ -1,6 +1,6 @@
 import createMollieClient from "@mollie/api-client";
 
-const mollie = createMollieClient({ apiKey: 'xx' })
+const mollie = createMollieClient({ apiKey: process.env.MOLLIE_KEY })
 
 export default async function handler(req, res) {
   switch (req.method) {
